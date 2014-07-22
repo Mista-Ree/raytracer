@@ -12,6 +12,7 @@ set	(	sources
 		vector.cpp
 		image.cpp
 		colour.cpp
+		intersection.cpp
 	)
 
 
@@ -23,6 +24,7 @@ set	(	headers
 		vector.h
 		image.h
 		colour.h
+		intersection.h
 	)
 	
 

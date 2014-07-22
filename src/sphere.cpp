@@ -1,12 +1,14 @@
 #include "sphere.h"
 
-Sphere::Sphere(Vector3 centre, float radius){
+Sphere::Sphere(Vector3 centre, double radius, Colour colour){
 	this->centre = centre;
 	this->radius = radius;
+	this->colour = colour;
+	this->diffuse = 0.8;
 }
 
-void Sphere::intersect(Ray *r, float *t){
-	float a, b, c;
+Intersection Sphere::intersect(Ray *r, double *t){
+	double a, b, c;
 
 	Vector3 temp = r->origin - this->centre;
 
@@ -16,4 +18,20 @@ void Sphere::intersect(Ray *r, float *t){
 
 	*t = getQuadRoots(a, b, c);
 
+
+	return Intersection((*t) * r->direction);
+
+}
+
+Vector3 Sphere::normal(Vector3 p){
+	return centre - p; // returns a normal vector at the point p
+}
+
+
+Colour Sphere::getColour(){
+	return this->colour;
+}
+
+double Sphere::getDiffuse(){
+	return this->diffuse;
 }

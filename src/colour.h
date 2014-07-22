@@ -4,10 +4,10 @@
 class Colour{
 
 public:
-	float r, g, b;
+	double r, g, b;
 
 	Colour() : r(0), g(0), b(0){}
-	Colour(float red, float green, float blue) : r(red), g(green), b(blue){}
+	Colour(double red, double green, double blue) : r(red), g(green), b(blue){}
 
 
 };

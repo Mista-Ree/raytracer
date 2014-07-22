@@ -4,6 +4,6 @@
 #include <math.h>
 #include <assert.h>
 
-float getQuadRoots(float a, float b, float c);
+double getQuadRoots(double a, double b, double c);
 
 #endif

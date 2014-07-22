@@ -5,17 +5,26 @@
 #include "ray.h"
 #include "maths.h"
 
+
 class Sphere : public Shape {
 
 private:
 	Vector3 centre;
-	float radius;
+	double radius;
+	Colour colour;
+	double diffuse;
 
 public:
 
-	Sphere(Vector3 pos, float radius);
+	Sphere(Vector3 pos, double radius, Colour colour);
 
-	void intersect(Ray *v, float *t);
+	Intersection intersect(Ray *v, double *t);
+	
+	Vector3 normal(Vector3 v);
+
+	Colour getColour();
+
+	double getDiffuse();
 };
 
 #endif

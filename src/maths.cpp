@@ -1,13 +1,13 @@
 #include "maths.h"
 
-float getQuadRoots(float a, float b, float c){
-	float disc = (b*b - 4 * a*c);
+double getQuadRoots(double a, double b, double c){
+	double disc = (b*b - 4 * a*c);
 	if(disc < 0){
 		return -1;
 	}
 	assert(a > 0.0f);
-	float discriminant = sqrt(disc);
-	float res1, res2;
+	double discriminant = sqrt(disc);
+	double res1, res2;
 
 	res1 = (-b + discriminant) / (2 * a);
 	res2 = (-b - discriminant) / (2 * a);
