@@ -1,4 +1,5 @@
 #include "image.h"
+#include <iostream>
 
 Image::Image(int width, int height){
 	this->width		= width;
@@ -86,6 +87,9 @@ void Image::writeTGA(const char *outfile, bool scale_color)
 			}
 			else
 			{
+				if(color->r > 0){
+					std::cout << "";
+				}
 				double r = (color->r > 1.0) ? 1.0 : color->r;
 				double g = (color->g > 1.0) ? 1.0 : color->g;
 				double b = (color->b > 1.0) ? 1.0 : color->b;

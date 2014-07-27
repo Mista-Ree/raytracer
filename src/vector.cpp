@@ -83,3 +83,7 @@ double mod(Vector3 v){
 
 	return sqrt(x*x + y*y + z*z);
 }
+
+Vector3 reverse(Vector3 v){
+	return Vector3(0,0,0)-v;
+}

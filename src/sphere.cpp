@@ -4,7 +4,7 @@ Sphere::Sphere(Vector3 centre, double radius, Colour colour){
 	this->centre = centre;
 	this->radius = radius;
 	this->colour = colour;
-	this->diffuse = 0.8;
+	this->diffuse = 1.0;
 }
 
 Intersection Sphere::intersect(Ray *r, double *t){

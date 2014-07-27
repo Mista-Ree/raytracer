@@ -37,4 +37,5 @@ Vector3 normalise(Vector3 v);
 
 double mod(Vector3 v);
 
+Vector3 reverse(Vector3 v);
 #endif
