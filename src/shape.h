@@ -7,7 +7,14 @@
 #include "intersection.h"
 
 class Shape{
+protected:
+	Vector3 pos;
 public:
+	Shape();
+	Shape(Vector3 position);
+	
+	Vector3 getPosition();
+
 	virtual Intersection intersect(Ray *v, double *t) = 0;
 
 	virtual Colour getColour() = 0;

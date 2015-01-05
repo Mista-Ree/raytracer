@@ -13,6 +13,9 @@ set	(	sources
 		image.cpp
 		colour.cpp
 		intersection.cpp
+		scene.cpp
+		shape.cpp
+		perspective_raytracer.cpp
 	)
 
 
@@ -25,6 +28,8 @@ set	(	headers
 		image.h
 		colour.h
 		intersection.h
+		ray_tracer.h
+		scene.h
 	)
 	
 

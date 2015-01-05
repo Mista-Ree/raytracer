@@ -14,8 +14,8 @@ public:
 
 	friend Vector3 operator+(const Vector3 &c1, const Vector3 &c2);
 	friend Vector3 operator-(const Vector3 &c1, const Vector3 &c2);
-	friend double   operator*(const Vector3 &c1, const Vector3 &c2);
-	friend Vector3   operator*(const double c1, const Vector3 &c2);
+	friend double  operator*(const Vector3 &c1, const Vector3 &c2);
+	friend Vector3 operator*(const double c1, const Vector3 &c2);
 
 	double x();
 	double y();

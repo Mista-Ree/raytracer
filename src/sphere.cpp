@@ -1,6 +1,6 @@
 #include "sphere.h"
 
-Sphere::Sphere(Vector3 centre, double radius, Colour colour){
+Sphere::Sphere(Vector3 centre, double radius, Colour colour) : Shape(pos){
 	this->centre = centre;
 	this->radius = radius;
 	this->colour = colour;
